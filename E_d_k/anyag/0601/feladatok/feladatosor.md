@@ -1,6 +1,6 @@
 
 
-## **1. Alap tételek (szinte mindig előjönnek)**
+## **1. Alap tételek**
 
 ---
 
