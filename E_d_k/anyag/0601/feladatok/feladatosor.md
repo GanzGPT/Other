@@ -7,6 +7,7 @@
 **01 - Feladat – Megszámlálás tétel alkalmazása**
 
 Adott egy egész számokat tartalmazó lista. Írjon programot, amely megszámolja, hány darab páros szám van a listában!
+
 A = {4, 7, 12, 19, 22, 35, 40}
 
 Hogyan kellene módosítani az algoritmust, ha azt szeretnénk megszámolni, hogy hány olyan szám van, amelyik 10 és 30 között van (beleértve a 10-et és a 30-at is)?
