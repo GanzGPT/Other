@@ -1,7 +1,7 @@
 
 # **1. Alap tételek (szinte mindig előjönnek)**
 
-## Megszámlálás tétel alkalmazása**
+## **Megszámlálás tétel alkalmazása**
 
 **Miről szól a megszámlálás tétel?**
 A megszámlálás tétel olyan algoritmikus eljárás, amely során megszámoljuk, hogy egy adott feltételnek hány elem felel meg egy sorozatban, listában vagy adathalmazban. A tétel célja tehát nem az elemek módosítása, hanem azok számának meghatározása egy adott szempont alapján.
