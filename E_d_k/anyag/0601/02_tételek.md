@@ -1,15 +1,18 @@
 
-# **1. Alap tételek (szinte mindig előjönnek)**
+# **1. Alap tételek**
 
 ## **Megszámlálás tétel alkalmazása**
 
 **Miről szól a megszámlálás tétel?**
+
 A megszámlálás tétel olyan algoritmikus eljárás, amely során megszámoljuk, hogy egy adott feltételnek hány elem felel meg egy sorozatban, listában vagy adathalmazban. A tétel célja tehát nem az elemek módosítása, hanem azok számának meghatározása egy adott szempont alapján.
 
 **Mikor alkalmazzuk?**
+
 A megszámlálás tételt akkor alkalmazzuk, amikor kíváncsiak vagyunk arra, hogy egy adott adathalmazban hány olyan elem található, amely megfelel egy meghatározott logikai feltételnek. Például: hány páros szám van egy listában, hány név kezdődik „A” betűvel, hány tanuló ért el legalább elégséges osztályzatot stb.
 
 **Hogyan lehet felismerni?**
+
 A megszámlálás tétel jellemző felismerhető elemei:
 
 * Az algoritmus egy számlálót (pl. `db`, `számláló`, `count`) használ, amelyet kezdetben nullára állítunk.
@@ -24,9 +27,11 @@ A megszámlálás tétel jellemző felismerhető elemei:
 
 
 **Miről szól az összegzés tétel?**
+
 Az összegzés tétel célja, hogy egy sorozat, lista vagy adathalmaz elemei közül meghatározott szempont szerint kiválasztott értékeket összeadjuk. Az algoritmus eredményeként egyetlen számot kapunk: a részhalmaz vagy az összes elem összegét.
 
 **Mikor alkalmazzuk?**
+
 Az összegzés tételt akkor alkalmazzuk, amikor meg akarjuk határozni:
 
 * egy lista elemeinek összegét,
@@ -34,6 +39,7 @@ Az összegzés tételt akkor alkalmazzuk, amikor meg akarjuk határozni:
 * például egy osztály tanulói pontszámainak vagy jegyeinek összegét.
 
 **Hogyan lehet felismerni?**
+
 Az összegzés tétel algoritmusában a következő jellemző lépések találhatók:
 
 * Egy változót (pl. `osszeg`, `sum`) kezdetben nullára állítunk.
@@ -47,9 +53,11 @@ Az összegzés tétel algoritmusában a következő jellemző lépések találha
 
 
 **Miről szól az eldöntés tétel?**
+
 Az eldöntés tétel célja annak megállapítása, hogy egy adott feltétel teljesül-e legalább egy elemre egy sorozatban, listában vagy más adathalmazban. A tétel végén egy logikai (igaz/hamis) értéket kapunk válaszként.
 
 **Mikor alkalmazzuk?**
+
 Az eldöntés tételt akkor használjuk, ha arra vagyunk kíváncsiak, hogy:
 
 * van-e olyan elem, amely megfelel egy adott feltételnek,
@@ -62,6 +70,7 @@ Példák:
 * Található-e páros szám egy tömbben?
 
 **Hogyan lehet felismerni?**
+
 Az eldöntés tétel algoritmusának jellemzői:
 
 * Egy logikai változót (pl. `van`, `talalt`, `letezik`) kezdetben hamisra (`False`) állítunk.
@@ -76,9 +85,11 @@ Az eldöntés tétel algoritmusának jellemzői:
 
 
 **Miről szól a kiválasztás tétel?**
+
 A kiválasztás tétel célja, hogy **megtaláljunk egy olyan elemet egy adathalmazban, amely megfelel egy adott feltételnek**, és amelyről előzetesen **biztosan tudjuk, hogy létezik**. A tétel eredménye maga az elem, vagy annak helye (például indexe).
 
 **Mikor alkalmazzuk?**
+
 A kiválasztás tételt akkor alkalmazzuk, ha:
 
 * a feldolgozandó adathalmazban garantáltan van olyan elem, amely kielégíti a keresett feltételt,
@@ -91,6 +102,7 @@ Példák:
 * Egy szöveges listából meg kell adni egy „B” betűvel kezdődő nevet, ha tudjuk, hogy van ilyen.
 
 **Hogyan lehet felismerni?**
+
 A kiválasztás tétel algoritmusának jellemző elemei:
 
 * Ciklus segítségével bejárjuk az elemeket.
@@ -103,9 +115,11 @@ A kiválasztás tétel algoritmusának jellemző elemei:
 
 
 **Miről szól a keresés tétel?**
+
 A keresés tétel célja, hogy **megtaláljunk egy olyan elemet egy sorozatban vagy adathalmazban, amely megfelel egy megadott feltételnek**. A keresés során **nem biztos, hogy létezik ilyen elem**, ezért a tétel végeredménye lehet egy sikeres találat (az elem vagy annak helye), vagy az, hogy nem található ilyen.
 
 **Mikor alkalmazzuk?**
+
 A keresés tételt akkor alkalmazzuk, ha:
 
 * szeretnénk megtalálni egy feltételnek megfelelő elemet,
@@ -119,6 +133,7 @@ Példák:
 * Egy dolgozatjegyek listájában keressük, van-e 1-es.
 
 **Hogyan lehet felismerni?**
+
 A keresés tétel algoritmusának jellegzetes lépései:
 
 * Egy logikai változót (pl. `talalt`) induláskor hamisra állítunk.
@@ -135,9 +150,11 @@ A keresés tétel algoritmusának jellegzetes lépései:
 ## **Maximum tétel alkalmazása**
 
 **Miről szól a maximum tétel?**
+
 A maximum tétel célja, hogy **meghatározzuk egy adathalmaz legnagyobb elemét**. Az algoritmus során végigvizsgáljuk a sorozat minden elemét, és megkeressük azt, amelyiknél nincs nagyobb. A tétel eredményeként vagy a legnagyobb értéket kapjuk meg, vagy annak helyét (indexét), attól függően, hogy milyen célból alkalmazzuk.
 
 **Mikor alkalmazzuk?**
+
 A maximum tételt akkor használjuk, ha:
 
 * egy adatsorozatban a legnagyobb értéket keressük,
@@ -151,6 +168,7 @@ Példák:
 * Egy árlistából meg kell találni a legdrágább termék árát vagy annak indexét.
 
 **Hogyan lehet felismerni?**
+
 A maximum tétel algoritmusa az alábbi jellemző lépésekből áll:
 
 1. A sorozat első elemét kiindulási maximumként eltároljuk (pl. `max = lista[0]`).
@@ -169,9 +187,11 @@ Fontos: a maximum tétel csak akkor használható biztonságosan, ha az adathalm
 
 
 **Miről szól a minimum tétel?**
+
 A minimum tétel célja, hogy **megtaláljuk egy adatsorozat legkisebb elemét**. Az algoritmus során végigvizsgáljuk az összes elemet, és kiválasztjuk azt, amelyiknél nincs kisebb. A végeredmény lehet maga a legkisebb érték, vagy az adott érték helye (például az indexe) az adathalmazon belül.
 
 **Mikor alkalmazzuk?**
+
 A minimum tételt akkor használjuk, ha:
 
 * egy lista vagy sorozat legkisebb értékét keressük,
@@ -184,6 +204,7 @@ Példák:
 * Egy sportversenyen rögzített idők közül meg kell keresni a leggyorsabb versenyző eredményét.
 
 **Hogyan lehet felismerni?**
+
 A minimum tétel algoritmusa nagyon hasonló a maximum tételhez, csak a legkisebb értékre koncentrál:
 
 1. A sorozat első elemét tekintjük kezdeti minimumnak (pl. `min = lista[0]`).
@@ -205,9 +226,11 @@ A minimum tétel a maximum tétel párjaként is gyakran előfordul, például a
 
 
 **Miről szól a szétválogatás tétel?**
+
 A szétválogatás tétel célja, hogy **egy adathalmaz elemeit több csoportra bontsuk egy adott feltétel alapján**. Az algoritmus minden elemet megvizsgál, és a feltétel teljesülésétől függően más-más halmazba (pl. listába) helyez. A tétel során tehát nem elég csak megvizsgálni az elemeket, hanem **szervezetten különválasztjuk őket**.
 
 **Mikor alkalmazzuk?**
+
 A szétválogatás tételt akkor alkalmazzuk, ha:
 
 * az adathalmaz elemeit szeretnénk több csoportba sorolni,
@@ -220,6 +243,7 @@ Példák:
 * Egy osztály tanulói közül külön listába tesszük a legalább elégséges és az elégtelen jegyet szerzett tanulókat.
 
 **Hogyan lehet felismerni?**
+
 A szétválogatás tétel algoritmusa az alábbi lépésekből épül fel:
 
 1. Létrehozunk legalább két új, üres listát (pl. `A` és `B`), amelyekbe az elemek kerülni fognak.
@@ -238,9 +262,11 @@ A szétválogatás tétel különösen hasznos adatok csoportosítására, előf
 
 
 **Miről szól a csoportosítás tétel?**
+
 A csoportosítás tétel célja, hogy **egy adathalmaz elemeit több, egymástól jól elkülöníthető csoportba rendezzük**, egy meghatározott szempont vagy kategória szerint. Ellentétben a szétválogatás tétellel, ahol általában két részhalmazba soroljuk az elemeket, a csoportosítás során **több különálló kategóriát** is kezelünk – például évfolyamok, jegyek, kezdőbetűk vagy típusok szerint.
 
 **Mikor alkalmazzuk?**
+
 A csoportosítás tételt akkor használjuk, ha:
 
 * az adatok között **többféle osztályozási kategória** van jelen,
@@ -254,6 +280,7 @@ Példák:
 * Egy névsorban az embereket a nevük kezdőbetűje alapján csoportosítjuk (A–B–C…).
 
 **Hogyan lehet felismerni?**
+
 A csoportosítás tétel algoritmusa általában a következő lépésekből áll:
 
 1. Létrehozunk több csoportot képviselő adatszerkezetet (pl. több lista vagy egy szótár, amely kulcsként a csoport nevét, értékként a hozzá tartozó elemek listáját tartalmazza).
@@ -270,9 +297,11 @@ Ez a tétel fontos alapja például adatelemzésnek, statisztikai feldolgozásna
 ## **Összefuttatás tétel alkalmazása**
 
 **Miről szól az összefuttatás tétel?**
+
 Az összefuttatás tétel célja, hogy **két rendezett (általában növekvő vagy csökkenő sorrendű) sorozatból egy harmadik, szintén rendezett sorozatot hozzunk létre**, amely tartalmazza az eredeti listák összes elemét. Az algoritmus **kihasználja az eredeti sorozatok rendezettségét**, így hatékonyabb, mint ha az összefűzött listát újra rendeznénk.
 
 **Mikor alkalmazzuk?**
+
 Az összefuttatás tételt akkor használjuk, ha:
 
 * két **rendezett** listát szeretnénk egyetlen **szintén rendezett** listába egyesíteni,
@@ -286,6 +315,7 @@ Példák:
 * Rendezett pontszámlistákból készítünk egy közös rangsort.
 
 **Hogyan lehet felismerni?**
+
 Az összefuttatás tétel algoritmusa jellemzően így néz ki:
 
 1. Két külön rendezett listával dolgozunk (pl. `A` és `B`).
@@ -306,9 +336,11 @@ Az összefuttatás tétel az alapja a **merge sort** nevű hatékony rendezési 
 
 
 **Miről szól a rendezés tétel?**
+
 A rendezés tétel célja, hogy **egy adathalmaz elemeit meghatározott sorrendbe állítsuk**, általában növekvő vagy csökkenő sorrend szerint. Az algoritmus során az elemeket egymással összehasonlítjuk, és helyet cserélünk, ha szükséges, hogy a kívánt sorrend kialakuljon. A rendezés eredménye egy új vagy módosított lista, amelyben az elemek rendezetten követik egymást.
 
 **Mikor alkalmazzuk?**
+
 A rendezés tételt akkor alkalmazzuk, ha:
 
 * egy adatsorozatot áttekinthetőbbé vagy feldolgozhatóbbá szeretnénk tenni,
@@ -342,4 +374,5 @@ A rendezés tétel felismerhető, ha:
 * Beépített nyelvi rendezők (pl. Python `sorted()`, JavaScript `array.sort()`).
 
 **Fontos megjegyzés:**
+
 A rendezés tétel gyakran más algoritmusok előkészítő lépéseként jelenik meg. Például ha egy összefuttatást vagy bináris keresést szeretnénk alkalmazni, előbb rendezni kell az adatokat. A választott rendezési módszer függ az adathalmaz méretétől, típusától, és a program nyelvi környezetétől.
